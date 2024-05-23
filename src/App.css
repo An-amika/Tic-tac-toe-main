@@ -1,0 +1,82 @@
+/* Center the main content */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #333;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Style the game status message */
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* Changed to white */
+}
+
+/* Style the score display */
+.score {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff; /* Changed to white */
+}
+
+/* Container for the board with confined width */
+.board-container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;  
+  border: 2px solid #fff;
+}
+
+/* Style the board rows */
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style individual squares */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #050505; /* Changed to white */
+  font-size: 32px;
+  font-weight: bold;
+  color: #fefdfd; /* Default text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Change square background color on hover */
+.square:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style the reset button */
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Change button background color on hover */
+.reset-button:hover {
+  background-color: #0056b3;
+}
+
